@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Build Some More</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Selection screen (categories + activities on one screen) -->
+<div id="select-screen" class="screen active">
+  <!-- Particle canvas (behind everything) -->
+  <canvas id="splash-particles"></canvas>
+  <!-- Animated SVG decorations -->
+  <div id="splash-decor">
+    <img class="decor float" src="Resources/Animals/Young/Elephant.svg" style="top:2%;left:1%;width:11%;" alt="">
+    <img class="decor spin" src="Resources/Shapes/Star.svg" style="top:5%;right:2%;width:9%;" alt="">
+    <img class="decor drift" src="Resources/clowns/One Step/clown.svg" style="bottom:18%;left:0%;width:10%;" alt="">
+    <img class="decor wiggle" src="Resources/Animals/Young/Lion.svg" style="top:3%;left:38%;width:9%;" alt="">
+    <img class="decor spin" src="Resources/Shapes/Wheel.svg" style="bottom:20%;right:1%;width:8%;" alt="">
+    <img class="decor float" src="Resources/Animals/Young/cow.svg" style="top:42%;right:0%;width:10%;" alt="">
+    <img class="decor drift" src="Resources/Hippy/van1.svg" style="top:44%;left:0%;width:11%;" alt="">
+    <img class="decor wiggle" src="Resources/Shapes/Flower.svg" style="top:1%;right:35%;width:8%;" alt="">
+    <img class="decor spin" src="Resources/Shapes/ying yang.svg" style="bottom:19%;left:35%;width:7%;" alt="">
+    <img class="decor float" src="Resources/Animals/Young/Kanga.svg" style="bottom:22%;right:32%;width:9%;" alt="">
+    <img class="decor wiggle" src="Resources/Animals/Young/Pig.svg" style="top:4%;right:18%;width:8%;" alt="">
+    <img class="decor drift" src="Resources/Burst/Clown1.svg" style="top:42%;left:32%;width:8%;" alt="">
+  </div>
+
+  <!-- Top section: Categories -->
+  <div class="section" id="cat-section">
+    <div class="section-border">
+      <button class="nav-arrow nav-left" id="cat-left" aria-label="Previous categories"></button>
+      <div class="btn-row" id="cat-row"></div>
+      <button class="nav-arrow nav-right" id="cat-right" aria-label="Next categories"></button>
+    </div>
+  </div>
+  <!-- Bottom section: Activities -->
+  <div class="section" id="act-section">
+    <div class="section-border">
+      <button class="nav-arrow nav-left" id="act-left" aria-label="Previous activities"></button>
+      <div class="btn-row" id="act-row"></div>
+      <button class="nav-arrow nav-right" id="act-right" aria-label="Next activities"></button>
+    </div>
+  </div>
+  <!-- Title -->
+  <h1 id="splash-title">Build Some More</h1>
+  <!-- Settings -->
+  <button id="btn-settings" aria-label="Settings"></button>
+  <div id="settings-panel" class="hidden">
+    <div class="switch-mode-option selected" data-mode="0">
+      <svg viewBox="0 0 80 40" width="80" height="40"><circle cx="12" cy="20" r="10" fill="#e22"/><circle cx="32" cy="20" r="10" fill="#e22"/><circle cx="52" cy="20" r="10" fill="#e22"/><circle cx="72" cy="20" r="10" fill="#e22"/></svg>
+    </div>
+    <div class="switch-mode-option" data-mode="1">
+      <svg viewBox="0 0 80 40" width="80" height="40"><circle cx="12" cy="20" r="10" fill="#e22"/><circle cx="32" cy="20" r="10" fill="#29f"/><circle cx="52" cy="20" r="10" fill="#e22"/><circle cx="72" cy="20" r="10" fill="#29f"/></svg>
+    </div>
+    <div class="switch-mode-option" data-mode="2">
+      <svg viewBox="0 0 80 40" width="80" height="40"><circle cx="12" cy="20" r="10" fill="#29f"/><circle cx="32" cy="20" r="10" fill="#e22"/><circle cx="52" cy="20" r="10" fill="#e22"/><circle cx="72" cy="20" r="10" fill="#29f"/></svg>
+    </div>
+    <div class="switch-mode-option" data-mode="3">
+      <svg viewBox="0 0 80 40" width="80" height="40"><circle cx="16" cy="20" r="10" fill="#e22"/><text x="40" y="26" text-anchor="middle" fill="#fff" font-size="18" font-weight="bold">+</text><circle cx="64" cy="20" r="10" fill="#29f"/></svg>
+    </div>
+  </div>
+</div>
+
+<!-- Game screen -->
+<div id="game-screen" class="screen">
+  <div id="game-area">
+    <div id="game-bg-anim">
+      <div class="bg-blob"></div>
+      <div class="bg-blob"></div>
+      <div class="bg-blob"></div>
+    </div>
+    <div id="game-pic"></div>
+    <canvas id="fx-canvas"></canvas>
+    <button id="btn-back" aria-label="Back"></button>
+    <div id="switch-ind-left" class="switch-indicator hidden"></div>
+    <div id="switch-ind-right" class="switch-indicator hidden"></div>
+  </div>
+</div>
+
+<script src="wmf2svg.js?v=8"></script>
+<script src="buildsome.js?v=13"></script>
+<script src="splash-fx.js"></script>
+</body>
+</html>

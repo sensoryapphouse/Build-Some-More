@@ -1,0 +1,17 @@
+<svg shape-rendering="geometricPrecision" xmlns="http://www.w3.org/2000/svg" xmlns:mdcr="http://sensory.com/mdcr" viewBox="-1 -1 402 302" preserveAspectRatio="none">
+  <style>polygon,polyline,line,path{stroke-linejoin:round;stroke-linecap:round}</style>
+  <metadata>
+    <mdcr:info xmlns:mdcr="http://sensory.com/mdcr">
+      <mdcr:source format="WMF" generator="wmf2svg.html"/>
+      <mdcr:bounds left="0" top="0" right="6030" bottom="4530" inch="1440"/>
+      <mdcr:records count="3">
+        <mdcr:record tag="MDCR-{"/>
+        <mdcr:record tag="MDCR-S"/>
+        <mdcr:record tag="MDCR-}"/>
+      </mdcr:records>
+    </mdcr:info>
+  </metadata>
+  <g data-mdcr="group" class="mdcr-region">
+    <rect x="0" y="0" width="401" height="301" fill="#000000" stroke="#000000" stroke-linejoin="round" stroke-linecap="round" stroke-width="2"/>
+  </g>
+</svg>
